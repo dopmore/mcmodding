@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "slimeboost:block/speed_block"
+    }
+  }
+}
