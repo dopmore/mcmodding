@@ -6,3 +6,7 @@ It's features are:
 - A custom Dash Stick that allows you to dash into the direction you're looking at (5s cooldown)
 
 With those features you can create some fun parkours and generally fly around and clutch in your world :)
+
+https://github.com/user-attachments/assets/eb2e09a3-0f99-435f-b66e-b97d70f1e82d
+
+
