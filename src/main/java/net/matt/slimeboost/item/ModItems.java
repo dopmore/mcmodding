@@ -12,41 +12,41 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-  public static final Item SLIME_STICK = new SlimeStickItem(new Item.Settings());
+    public static final Item SLIME_STICK = new SlimeStickItem(new Item.Settings().maxDamage(100));
 
-  public static final Item DASH_STICK = new DashStickItem(new Item.Settings());
+    public static final Item DASH_STICK = new DashStickItem(new Item.Settings());
 
-  public static final Item SPEED_BLOCK_ITEM = new BlockItem(
-      ModBlocks.SPEED_BLOCK,
-      new Item.Settings());
+    public static final Item SPEED_BLOCK_ITEM = new BlockItem(
+            ModBlocks.SPEED_BLOCK,
+            new Item.Settings());
 
-  public static void initialize() {
+    public static void initialize() {
 
-    Registry.register(
-        Registries.ITEM,
-        Identifier.of(SlimeBoostMod.MOD_ID, "slime_stick"),
-        SLIME_STICK);
+        Registry.register(
+                Registries.ITEM,
+                Identifier.of(SlimeBoostMod.MOD_ID, "slime_stick"),
+                SLIME_STICK);
 
-    Registry.register(
-        Registries.ITEM,
-        Identifier.of(SlimeBoostMod.MOD_ID, "speed_block"),
-        SPEED_BLOCK_ITEM);
+        Registry.register(
+                Registries.ITEM,
+                Identifier.of(SlimeBoostMod.MOD_ID, "speed_block"),
+                SPEED_BLOCK_ITEM);
 
-    Registry.register(
-        Registries.ITEM,
-        Identifier.of(SlimeBoostMod.MOD_ID, "dash_stick"),
-        DASH_STICK);
+        Registry.register(
+                Registries.ITEM,
+                Identifier.of(SlimeBoostMod.MOD_ID, "dash_stick"),
+                DASH_STICK);
 
-    ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
-        .register(entries -> {
-          entries.add(SLIME_STICK);
-          entries.add(DASH_STICK);
-        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register(entries -> {
+                    entries.add(SLIME_STICK);
+                    entries.add(DASH_STICK);
+                });
 
-    ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
-        .register(entries -> entries.add(SPEED_BLOCK_ITEM));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register(entries -> entries.add(SPEED_BLOCK_ITEM));
 
-    ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
-        .register(entries -> entries.add(SLIME_STICK));
-  }
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register(entries -> entries.add(SLIME_STICK));
+    }
 }

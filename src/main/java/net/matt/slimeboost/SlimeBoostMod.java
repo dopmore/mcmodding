@@ -3,6 +3,7 @@ package net.matt.slimeboost;
 import net.fabricmc.api.ModInitializer;
 import net.matt.slimeboost.block.ModBlocks;
 import net.matt.slimeboost.item.ModItems;
+import net.matt.slimeboost.util.Scheduler;
 
 public class SlimeBoostMod implements ModInitializer {
 
@@ -13,6 +14,7 @@ public class SlimeBoostMod implements ModInitializer {
 
 		ModBlocks.initialize();
 		ModItems.initialize();
+		Scheduler.initialize();
 
 	}
 }

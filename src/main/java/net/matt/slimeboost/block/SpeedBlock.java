@@ -21,7 +21,7 @@ public class SpeedBlock extends Block {
     if (entity instanceof LivingEntity living) {
 
       living.addStatusEffect(
-          new StatusEffectInstance(StatusEffects.SPEED, 40, 1));
+          new StatusEffectInstance(StatusEffects.SPEED, 40, 4, true, false));
 
     }
 
