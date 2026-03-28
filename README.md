@@ -7,6 +7,7 @@ It's features are:
 
 With those features you can create some fun parkours and generally fly around and clutch in your world :)
 
-https://github.com/user-attachments/assets/eb2e09a3-0f99-435f-b66e-b97d70f1e82d
+https://github.com/user-attachments/assets/1772d27e-375d-42bd-9494-3f67e7daf598
+
 
 
